@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shelter</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="body">
+<div class="modal" style="display: none" onclick="modal()">
+    <div class="modalCard">
+        <div class="close"></div>
+        <div class="modalImage" style="background: "></div>
+        <div class="modalInfo">
+            <a class="modalName"></a>
+            <a class="modalPet"></a>
+            <a class="modalDescription"></a>
+            <ul class="modalList">
+                <li style="margin-top: 10px">Age:
+                    <a class="age"></a>
+                </li>
+                <li>Inoculations:
+                    <a class="inoculations"></a>
+                </li>
+                <li>Diseases:
+                    <a class="diseases"></a>
+                </li>
+                <li>Parasites:
+                    <a class="parasites"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<main class="main">
+    <div class="shadow" style="display: none" onclick="hide()"></div>
+            <header class="header" style="width: ; height: ; background: ; margin-right: ">
+                <div class="logo" style="left: ">
+                    <a class="name">Cozy House</a>
+                    <a class="description">Shelter for pets in Boston</a>
+                </div>
+                <div class="menu" style="display: ; transform: ">
+                    <div class="linkAbout" onclick="hide()">
+                        <a class="about">About the shelter</a>
+                        <div class="underLine"></div>
+                    </div>
+                    <div class="linkPets" onclick="hide()">
+                        <a href="./pets/pets.html" class="pets">Our pets</a>
+                    </div>
+                    <div class="linkHelp">
+                        <a href="#help" class="help">Help the shelter</a>
+                    </div>
+                    <div class="linkContacts" onclick="hide()">
+                        <a href="#contacts" class="contacts">Contacts</a>
+                    </div>
+                </div>
+                <div class="burger" style="transform: unset" onclick="hide()"></div>
+            </header>
+                <div class="start" style="background: ">
+                    <div class="startContent" style="display: block">
+                    <div class="content">
+                            <h1 class="heading">Not only people need a house</h1>
+                            <a class="subHeading">We offer to give a chance to a little and nice
+                                puppy with an extremely wide and open heart. He or she will love
+                                you more than anybody else in the world, you will see!
+                            </a>
+                            <button class="button">
+                                <a class="buttonLabel">Make a friend</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="puppy" style="display: block"></div>
+                </div>
+             <div class="aboutShelter">
+                 <div class="aboutContent">
+                     <div class="aboutPets"></div>
+                     <div class="contentBlock">
+                         <a class="aboutHeading">About the shelter “Cozy House”</a>
+                         <a class="subAbout1">Currently we have 121 dogs and 342 cats on our hands and
+                             statistics show that only 20% of them will find a family.
+                             The others will continue to live with us and will be waiting
+                             for a lucky chance to become dearly loved.
+                         </a>
+                         <a class="subAbout2">We feed our wards with the best food and make sure that
+                             they do not get sick, feel comfortable (including psychologically) and well.
+                             We are supported by 87 volunteers and 28 employees of various skill levels.
+                             About 12% of the animals are taken by the shelter staff. Taking care of the
+                             animals, they become attached to the pets and would hardly ever leave them
+                             alone.
+                         </a>
+                     </div>
+             </div>
+             </div>
+
+    <div class="petsBlock">
+        <div class="petsContent">
+            <div class="petsHeader">
+                <a>Our friends who</a>
+                <a>are looking for a house</a>
+            </div>
+            <div class="slider">
+                <div class="arrowRoundLeft" onclick="slide()">
+                        <div class="arrowLeft"></div>
+                </div>
+                <div class="cardKatrine" id="4" onclick="modal()">
+                    <div class="imgKatrine"id="4"></div>
+                    <a class="nameKatrine" id="4">Katrin</a>
+                    <div class="buttonBoxKatrine" id="4">
+                        <div class="buttonKatrine" id="4">
+                            <a class="buttonKatrineLabel" id="4">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardJennifer" id="0" onclick="modal()">
+                    <div class="imgJennifer" id="0"></div>
+                    <a class="nameJennifer" id="0">Jennifer</a>
+                    <div class="buttonBoxJennifer" id="0">
+                        <div class="buttonJennifer" id="0">
+                            <a class="buttonJenniferLabel" id="0">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWoody" id="2" onclick="modal()">
+                    <div class="imgWoody" id="2"></div>
+                    <a class="nameWoody" id="2">Woody</a>
+                    <div class="buttonBoxWoody" id="2">
+                        <div class="buttonWoody" id="2">
+                            <a class="buttonWoodyLabel" id="2">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrowRoundRight" onclick="slide()">
+                    <div class="arrowRight"></div>
+                </div>
+            </div>
+            <div class="buttonPrimary">
+                <a class="primaryLabel">Get to know the rest</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="blockHelp">
+        <a name="help"></a>
+        <div class="contentHelp">
+            <div class="headingHelp">
+                <a>How you can help</a>
+                <a>our shelter</a>
+            </div>
+            <div class="listHelp">
+                <div class="petFood">
+                    <div class="iconFood"></div>
+                    <div class="textFood">Pet food</div>
+                </div>
+                <div class="transportation">
+                    <div class="iconTransportation"></div>
+                    <a class="textTransportation">Transportation</a>
+                </div>
+                <div class="toys">
+                    <div class="iconToys"></div>
+                    <a class="textToys">Toys</a>
+                </div>
+                <div class="bowls">
+                    <div class="iconBowls"></div>
+                    <a class="textBowls">Bowls and cups</a>
+                </div>
+                <div class="shampoos">
+                    <div class="iconShampoos"></div>
+                    <a class="textShampoos">Shampoos</a>
+                </div>
+                <div class="vitamins">
+                    <div class="iconVitamins"></div>
+                    <a class="textVitamins">Vitamins</a>
+                </div>
+                <div class="medicines">
+                    <div class="iconMedicines"></div>
+                    <a class="textMedicines">Medicines</a>
+                </div>
+                <div class="collars">
+                    <div class="iconCollars"></div>
+                    <a class="textCollars">Collars / leashes</a>
+                </div>
+                <div class="sleeping">
+                    <div class="iconSleeping"></div>
+                    <a class="textSleeping">Sleeping areas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="donation">
+        <div class="donateContent">
+            <div class="donateDog"></div>
+            <div class="donateText">
+                <a class="donateHeader">You can also make a donation</a>
+                <div class="bankText">Name of the bank / Type of bank account</div>
+                <div class="bankCard">
+                    <div class="bankBlock">
+                        <div class="bankIcon"></div>
+                        <a href="http:\\" class="bankNumber">8380 2880 8028 8791 7435</a>
+                    </div>
+                </div>
+                <a class="bankInfo">Legal information and lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Maecenas a ipsum at libero
+                    sagittis dignissim sed ac diam. Praesent ultrices maximus tortor
+                    et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a name="contacts"></a>
+        <div class="footerContent">
+            <div class="footerContacts">
+                <a>For questions and suggestions</a>
+                <address class="mail">
+                    <div class="mailIcon">
+                        <a href="mailto:email@shelter.com" class="mailLink">11</a>
+                    </div>
+                    <a href="mailto:email@shelter.com" class="mailText">email@shelter.com</a>
+                </address>
+                <div class="phone">
+                    <div class="phoneIcon">
+                        <a href="tel:+13 674 567 75 54" class="tel">11</a>
+                    </div>
+                    <a href="tel:+13 674 567 75 54" class="phoneText">+13 674 567 75 54</a>
+                </div>
+            </div>
+            <div class="locations">
+                <a class="locationsHeader">We are waiting for your visit</a>
+                <div class="boston">
+                    <div class="bostonIcon">
+                        <a class="locate" href="https://goo.gl/maps/jqPPNAh9wRbdLeGh6">11</a>
+                    </div>
+                    <a href="https://goo.gl/maps/jqPPNAh9wRbdLeGh6" class="bostonText">1 Central Street, Boston (entrance from the store)</a>
+                </div>
+                <div class="london">
+                    <div class="londonIcon">
+                        <a class="locate" href="https://goo.gl/maps/jqPPNAh9wRbdLeGh6">11</a>
+                    </div>
+                    <a href="https://goo.gl/maps/jqPPNAh9wRbdLeGh6" class="londonText">18 South Park, London </a>
+                </div>
+            </div>
+        </div>
+        <div class="footerDog"></div>
+    </footer>
+</main>
+</body>
+</html>
